@@ -30,7 +30,7 @@ gulp.task('sass', function () {
     .pipe(concat('main.css'))
     .pipe(sourcemaps.write('.'))
   	.pipe(rename({suffix: '.min', prefix : ''}))
-    .pipe(minifycss())
+    .pipe(minifycss({processImport: false}))
     .pipe(gulp.dest('./src/app/css'));
 });
 
