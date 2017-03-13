@@ -14,8 +14,7 @@
 
   border-bottom: 1px solid transparentize($comment-color, 0.9);
   display: table;
-  margin-bottom: $base-spacing;
-  padding-bottom: 1em;
+  margin: $base-spacing 0;
   width: 100%;
 
   .comment-image,
