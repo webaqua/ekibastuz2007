@@ -52,11 +52,25 @@
       opacity: 0.2;
     }
 
-  .grid-item h1 {
+    .grid-item i {
+      background: #e42127;
+      border-radius: 3px;
+      padding: .6em 0;
+      font-size: 1.5em;
+      width: 2.2em;
+      height: 2.2em;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+  .grid-item {
+    h2, h3 {
       color: $grid-item-color;
       font-size: 1.3em;
       margin-bottom: 0.4em;
     }
+  }
 
   .grid-item p {
       color: transparentize($grid-item-color, 0.4);

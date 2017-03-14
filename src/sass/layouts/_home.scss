@@ -4,6 +4,24 @@ $black: #444;
 $white: #fff;
 $action-color: #477DCA !default;
 
+*:not(i) {
+font-family: 'Roboto', sans-serif !important;
+}
+
+h1 {
+	@media screen and (max-width: 900px){
+    font-size: 2em;
+	}
+	@media screen and (max-width: 600px){
+    font-size: 1.5em;
+	}
+}
+
+.manipula {
+	@include outer-container;
+	padding: 0 2em;
+}
+
 #main {
 	@include outer-container;
 }

@@ -7,12 +7,12 @@
   display: table;
   width: 100%;
   background-color: #fff;
-  padding: 15px 2em;
+  padding: 15px 0;
 }
 
 .centuria3 {
   @include span-columns(3);
-  height: 15vw;
+  height: 200px;
   position: relative;
 
   img {
@@ -29,7 +29,7 @@
 
 .centuria4 {
   @include span-columns(4);
-  height: 15vw;
+  height: 200px;
   position: relative;
 
   img {
@@ -46,8 +46,16 @@
 
 .centuria5 {
   @include span-columns(5);
+  @media screen and (max-width: 700px){@include span-columns(12);}
 }
 
 .centuria7 {
   @include span-columns(7);
+  @media screen and (max-width: 700px){@include span-columns(12);}
+}
+
+@media screen and (max-width: 1200px){
+  .centuria3, .centuria4 {
+    height: 15vw;
+  }
 }

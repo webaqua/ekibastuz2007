@@ -9,12 +9,14 @@
 
   background: $footer-background;
   display: inline-block;
-  padding: $base-spacing;
+  padding: 20px 15px;
   width: 100%;
 
   .footer-logo {
-    margin-bottom: 1em;
+    margin-bottom: 0;
     margin-right: 1em;
+    height: auto;
+    line-height: normal;
 
     @include media($large-screen) {
       float: left;
@@ -22,13 +24,25 @@
     }
   }
 
+  .konts {
+    float: left;
+
+    p {
+      margin: 0;
+      color: $black;
+    }
+    p:first-of-type {
+      margin-bottom: 5px;
+    }
+  }
+
   .footer-logo img {
-    height: 1.6em;
+    height: 3em;
   }
 
   ul {
     line-height: 1.5em;
-    margin: 0 0 1em 0;
+    margin: 0.5em 0;
     padding: 0;
 
     @include media($large-screen) {
@@ -50,13 +64,8 @@
   }
 
   ul li a {
-    color: $footer-link-color;
+    color: $black;
     text-decoration: none;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
   }
 
   .footer-secondary-links {

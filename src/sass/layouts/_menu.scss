@@ -32,7 +32,6 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: $navigation-padding;
     padding-right: 2em;
 
     img {
@@ -370,4 +369,31 @@ header.navigation {
       }
     }
   }
+}
+
+@media screen and (max-width: 1150px){
+
+  header.navigation {
+
+    ul {
+      li.nav-link {
+        line-height: 40px;
+        a {
+          line-height: 40px;
+          padding: 0 7px;
+        }
+      }
+    }
+
+    .navigation-tools {
+      padding: 5px;
+      height: 35px;
+
+      p {
+        font-size: 15px;
+        margin: 0;
+      }
+    }
+  }
+
 }

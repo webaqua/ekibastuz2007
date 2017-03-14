@@ -10,6 +10,7 @@
   $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
   background: $side-image-content-background;
+  margin-top: 3em;
 
   @include media($large-screen) {
     @include row(table);
@@ -68,6 +69,7 @@
       color: $base-font-color;
       line-height: $base-line-height;
       margin-bottom: 3em;
+      text-align: justify;
     }
   }
 
