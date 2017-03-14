@@ -7,7 +7,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  margin: 1em;
+  margin: 4em 0 1em;
   overflow: auto;
   padding: 0;
 
@@ -17,28 +17,27 @@
   }
 
   .bullet-icon {
-    background: $action-color;
+    background: $sec;
     border-radius: 50%;
     float: left;
     height: $icon-bullet-size;
     padding: $icon-bullet-size / 4;
     width: $icon-bullet-size;
-  }
+    position: relative;
 
-  .bullet-icon-1 {
-    background: $action-color;
-  }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+    }
 
-  .bullet-icon-2 {
-    background: adjust-hue($action-color, -50%);
-  }
-
-  .bullet-icon-3 {
-    background: adjust-hue($action-color, -140%);
   }
 
   .bullet-content {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    margin-right: 3em;
     margin-left: $icon-bullet-size * 1.4;
     text-align: left;
   }

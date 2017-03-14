@@ -16,6 +16,7 @@
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
   $grid-item-height: 17em;
+  margin: 3em 0;
 
   @include clearfix;
   position: relative;
