@@ -38,7 +38,7 @@
   }
 
   #urid {
-    background: url(/image/urid.png);
+    background: url(/image/urid.png) center;
     background-size: cover;
   }
 
@@ -82,4 +82,14 @@
   }
 
   @include reset-display();
+}
+@media screen and (max-width: 600px){
+  .side-image {
+    margin-top: 1em;
+
+    .side-image-content {
+      padding: 1em 0 !important;
+      p {margin-bottom: 1.5em;}
+    }
+  }
 }

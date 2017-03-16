@@ -4,15 +4,18 @@ $black: #444;
 $white: #fff;
 $action-color: #477DCA !default;
 
+$medium: new-breakpoint(max-width 900px);
+$small: new-breakpoint(max-width 600px);
+
 *:not(i) {
 font-family: 'Roboto', sans-serif !important;
 }
 
 h1 {
-	@media screen and (max-width: 900px){
+	@include media($medium){
     font-size: 2em;
 	}
-	@media screen and (max-width: 600px){
+	@include media($small){
     font-size: 1.5em;
 	}
 }
@@ -20,6 +23,7 @@ h1 {
 .manipula {
 	@include outer-container;
 	padding: 0 2em;
+	@include media($small){padding: 0 1em;}
 }
 
 #main {
@@ -30,6 +34,7 @@ h1 {
 	@include outer-container;
 	background-color: #fff;
 	padding: 0 2em;
+	@include media($small){padding: 0 1em;}
 
 	&#top-row {
 		@include span-columns(12);

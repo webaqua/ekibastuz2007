@@ -375,16 +375,6 @@ header.navigation {
 
   header.navigation {
 
-    ul {
-      li.nav-link {
-        line-height: 40px;
-        a {
-          line-height: 40px;
-          padding: 0 7px;
-        }
-      }
-    }
-
     .navigation-tools {
       padding: 5px;
       height: 35px;
@@ -397,3 +387,30 @@ header.navigation {
   }
 
 }
+
+@media screen and (max-width: 900px){
+
+  header.navigation {
+
+    ul {
+      li.nav-link {
+        line-height: 40px;
+        a {
+          line-height: 40px;
+          padding: 0 7px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px){
+
+  header.navigation {
+      .navigation-tools {
+      p {
+        font-size: 13px;
+      }
+    }
+    }
+  }

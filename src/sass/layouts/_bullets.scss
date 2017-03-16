@@ -63,3 +63,13 @@
     max-width: 100%;
   }
 }
+@media screen and (max-width: 600px){
+  .bullets {
+    margin: 2em 0 1em;
+
+    .bullet-content {
+      margin-bottom: 2em;
+      margin-right: 0;
+    }
+  }
+}

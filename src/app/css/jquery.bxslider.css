@@ -174,3 +174,11 @@ ul.bxslider {
 .bx-pager.bx-default-pager {
     display: none;
 }
+@media screen and (max-width: 600px){
+  .bx-wrapper .bx-prev {
+    left: 5px;
+  }
+  .bx-wrapper .bx-next {
+    right: 5px;
+  }
+}

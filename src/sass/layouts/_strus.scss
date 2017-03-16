@@ -93,3 +93,12 @@
   }
 
 }
+@media screen and (max-width: 600px){
+  .grid-items-lines {
+    margin: 0;
+    .grid-item {
+      height: auto;
+      padding: 1em;
+    }
+  }
+}

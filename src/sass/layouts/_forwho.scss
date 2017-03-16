@@ -16,6 +16,7 @@
   display: table;
   margin: 3em 0;
   width: 100%;
+  @media screen and (max-width: 600px){margin: 2em 0;}
 
   .comment-image,
   .comment-content {
@@ -63,4 +64,18 @@
       font-style: italic;
     }
   }
+}
+
+@media screen and (max-width: 600px){
+  .comment {
+  margin: 1em 0;
+  .comment-image,
+  .comment-content {
+    display: table;
+    margin: 0 0 20px;
+    padding: 0 !important;
+    vertical-align: top;
+    text-align: left;
+  }
+}
 }

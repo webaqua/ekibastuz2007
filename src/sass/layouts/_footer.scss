@@ -8,8 +8,10 @@
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
-  display: inline-block;
+  width: 100%;
+  display: table;
   padding: 20px 0;
+  @media screen and (max-width: 600px){padding: 10px 0;}
   width: 100%;
 
   .footer-logo {
