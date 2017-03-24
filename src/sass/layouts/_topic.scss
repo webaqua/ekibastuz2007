@@ -16,6 +16,22 @@
     @include row(table);
   }
 
+  .fotki {
+    display: table;
+    width: 100%;
+    .fotka {
+      float: left;
+      width: 22%;
+      margin-left: 4%;
+      img {
+        display: block;
+      }
+    }
+    .fotka:first-of-type {
+      margin-left: 0;
+    }
+  }
+
   .images-wrapper {
     background: url(/image/predlog.png) center;
     background-size: cover;
@@ -30,11 +46,6 @@
       background-size: cover;
       border-right: $side-image-border;
     }
-  }
-
-  #predlog {
-    background: url(/image/predlog.png);
-    background-size: cover;
   }
 
   #urid {
@@ -90,6 +101,30 @@
     .side-image-content {
       padding: 1em 0 !important;
       p {margin-bottom: 1.5em;}
+    }
+  }
+}
+
+#predlog {
+  .images-wrapper {
+    background: url(/image/predlog.png);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    video.forvidos {
+      position: absolute;
+      min-height: 100%;
+      width: 102%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .side-image-content {
+    padding: 1em 3em 0em 0em;
+
+    @include media($large-screen) {
+      padding: 4em 3em 0em 0em;
     }
   }
 }
